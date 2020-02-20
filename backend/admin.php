@@ -38,8 +38,6 @@ error_reporting( error_reporting() & ~E_NOTICE );
         include('admin_list.php');
         }
         ?>
-
-       
       </div>
 
     </div>

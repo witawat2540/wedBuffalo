@@ -16,14 +16,14 @@ error_reporting( error_reporting() & ~E_NOTICE );
       </div>
 
       <div class="col-md-9">
-        <a href ="news_form_add.php?act=add" class="btn-success btn-lg"> เพิ่มข่าว </a>
+        <a href ="news.php?act=add" class="btn-success btn-lg"> เพิ่มข่าว </a>
         <p></p>
 
         <?php
         $act = $_GET['act'];
         if($act == 'add')
         {
-        include('#');
+        include('news_form_add.php');
         }
         elseif ($act == 'edit') 
         {

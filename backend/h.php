@@ -24,11 +24,17 @@ include('connections.php');
   <!--start data table-->
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
 <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js">
-</script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script>
-$(document).ready(function() {
-$('#tblist').DataTable();
+  $(document).ready(function() {
+  $('#tblist').DataTable( {
+      "aaSorting" :[[1,'ASC']],
+  });  
+});
 </script>
+
+
 <!-- end data table -->
 
